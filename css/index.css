@@ -1,0 +1,146 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+
+/* ===== Left side of hero ===== */
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--text);
+  margin-left: 5%;
+  animation: fadeInLeft 1s ease-out forwards; /* enter animation */
+}
+
+/* Small intro text */
+.hero-left .intro {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--text);
+  opacity: 0.85;
+}
+
+/* Main title */
+.hero-left .hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+
+/* Subtitle (with accent word + blinking cursor) */
+.hero-left .hero-subtitle {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.hero-left .hero-subtitle .accent {
+  color: var(--accent);
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+.hero-left .hero-subtitle .cursor {
+  display: inline-block;
+  width: 1ch;
+  color: var(--accent);
+  animation: blink 1s step-start infinite;
+}
+
+/* Small description */
+.hero-left .smallDescription {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 500px;
+  color: var(--text);
+  opacity: 0.6;
+}
+
+/* Call-to-action button */
+.hero-left .btn-contact {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  margin-top: 1rem;
+  background: var(--accent);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 0 15px var(--accent), 0 0 30px var(--accent);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.hero-left .btn-contact:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px var(--accent), 0 0 50px var(--accent);
+}
+
+/* ===== Right side hero ===== */
+.hero-illustration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+/* Glowing oval background */
+.hero-illustration::before {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 250px;
+  background: var(--accent);
+  border-radius: 20% ; 
+  z-index: 0;
+  /* Glow effect */
+  box-shadow: 0 15px 25px #e7ff13;
+}
+
+/* Portrait image */
+.hero-illustration img {
+  position: relative;
+  max-width: 250px;
+  z-index: 1;
+  top: -64px;
+  opacity: 0;                  /* start invisible */
+  transform: translateY(80px); /* start lower */
+  animation: popUp 1s ease-out forwards;
+}
+
+/* ===== Animations ===== */
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes popUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80px) scale(0.95); /* slightly smaller */
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-10px) scale(1.02); /* overshoot upwards */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1); /* settle */
+  }
+}

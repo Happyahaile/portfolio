@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>About me</title>
+</head>
+<body>
+    <header>
+        <nav class="site-nav" role="navigation" aria-label="Main Navigation">
+            <ul class="site-nav__list">
+                <li><a class="site-nav__link" href="index.html">Home</a></li>
+                <li><a class="site-nav__link" href="about.html">About</a></li>
+                <li><a class="site-nav__link" href="portfolio.html">Portfolio</a></li>
+                <li><a class="site-nav__link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>        
+        <div class="theme-toggle">
+            <input type="radio" name="theme" id="theme-light" value="light">
+            <label for="theme-light">☀️</label>
+
+            <input type="radio" name="theme" id="theme-dark" value="dark" checked>
+            <label for="theme-dark">🌙</label>
+        </div>        
+    </header>
+    
+    <section id="about-bio" class="about-section" aria-labelledby="about-bio-title">
+        <div class="container bio-wrap">
+            <div class="bio-content">
+                <h1 id="about-bio-title">About Me</h1>
+
+                <p class="bio-text fancy-intro">
+                    Hi, I’m <span class="accent big">Happya Haile</span> — a software engineer who fuses
+                    <span class="big">UI</span> with <span class="big">backend</span> (no duct tape, promise).
+                    I ship <span class="accent big">useful</span> things people actually use—reliable, scalable, and
+                    kind to future me.
+                    Based in <span class="accent">Addis Ababa</span>, I tinker with
+                    <span class="big">web apps</span> and <span class="big">backend architecture</span> using
+                    <span class="code">HTML</span>, <span class="code">CSS</span>, and <span class="code">JavaScript</span>.
+                    Currently: turning small ideas into portfolio pieces and client features—one sensible commit at a time.
+                </p>
+
+
+                <p class="bio-cta">
+                    <a class="btn" href="contact.html">Get in touch</a>
+                    <a class="link" href="portfolio.html">See my work</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills + Education -->
+    <section id="skills-edu" class="skills-section scroll-target" aria-labelledby="skills-edu-title">
+        <div class="container">
+            <h2 id="skills-edu-title">Education &amp; Skills</h2>
+
+            <div class="skills-edu-grid">
+                <!-- Skills (cards + badges) -->
+                <div class="skills-panel">
+                    <div class="skill-group">
+                        <h3 class="group-title">Programming Languages</h3>
+                        <ul class="badges">
+                            <li class="badge">Java</li>
+                            <li class="badge">C++</li>
+                            <li class="badge">C#</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 class="group-title">Tools</h3>
+                        <ul class="badges">
+                            <li class="badge">Unity Hub</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3 class="group-title">Interpersonal</h3>
+                        <ul class="badges">
+                            <li class="badge">Problem Solving</li>
+                            <li class="badge">Responsibility</li>
+                            <li class="badge">Positive Attitude</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Education (table) -->
+                <div class="edu-panel">
+                    <h3 class="group-title">Education</h3>
+                    <table class="edu-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Level</th>
+                                <th scope="col">Institution</th>
+                                <th scope="col">Year</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bachelor Degree Candidate</td>
+                                <td>HiLCoE School of Computer Science and Technology</td>
+                                <td>2023–Present</td>
+                            </tr>
+                            <tr>
+                                <td>Secondary School</td>
+                                <td>Dandii Boru School</td>
+                                <td>2019–2022</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Hobbies -->
+    <section id="hobbies" class="hobbies-section scroll-target" aria-labelledby="hobbies-title">
+        <div class="container">
+            <h2 id="hobbies-title">Hobbies</h2>
+            <div class="hobby-list">
+                <div class="hobby-item">
+                    <img src="image/gym.png" alt="Gym workout" class="hobby-img">
+                    <p>Working Out</p>
+                </div>
+                <div class="hobby-item">
+                    <img src="image/reading.png" alt="Reading books" class="hobby-img">
+                    <p>Reading Books</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values & Mission -->
+    <section id="values-mission" class="values-section scroll-target" aria-labelledby="values-mission-title">
+  <div class="container">
+      <h2 id="values-mission-title">Values &amp; Mission</h2>
+
+      <div class="values-mission-grid"> <!-- NEW WRAPPER -->
+          <!-- Values -->
+          <div class="values">
+              <h3>Values</h3>
+              <ul>
+                  <li><strong>Clarity over cleverness:</strong> I prefer simple, readable solutions that teammates can maintain.</li>
+                  <li><strong>Small, steady progress:</strong> ship in increments, learn from feedback, improve the next commit.</li>
+                  <li><strong>Reliability:</strong> tests and monitoring matter more than flashy features.</li>
+                  <li><strong>Respect &amp; communication:</strong> listen first, ask good questions, write things down.</li>
+                  <li><strong>Privacy &amp; accessibility:</strong> build with real users in mind, not just ideal ones.</li>
+              </ul>
+          </div>
+
+          <!-- Mission -->
+          <div class="mission">
+              <h3>Mission</h3>
+              <p>
+                  Build useful, honest software that reduces everyday friction. I focus on practical tools,
+                  clear interfaces, and code that others can extend. If a feature helps someone finish
+                  their task a little faster or with less confusion, it’s a good day.
+              </p>
+          </div>
+      </div>
+  </div>
+    </section>
+
+    <footer class="site-footer">
+        <a href="https://github.com/Happyahaile" target="_blank">
+            <i class="fa-brands fa-github fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/happyahaile" target="_blank">
+            <i class="fa-brands fa-linkedin-in fa-2x"></i>
+        </a>
+        <a href="mailto:happyahaile@gmail.com" target="_blank">
+            <i class="fa-solid fa-at fa-2x"></i>        </a>
+        <nav class="footer-nav" role="navigation" aria-label="Footer Navigation">
+            <ul class="footer-nav__list">
+            <li><a class="footer-nav__link" href="index.html">Home</a></li>
+            <li><a class="footer-nav__link" href="about.html">About</a></li>
+            <li><a class="footer-nav__link" href="portfolio.html">Portfolio</a></li>
+            <li><a class="footer-nav__link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="footer-copy">© 2025 Happya Haile. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

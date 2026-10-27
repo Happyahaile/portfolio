@@ -1,0 +1,86 @@
+
+    .contact-icon a {
+    color: inherit;        /* takes the color of parent text */
+    text-decoration: none;
+    margin-right: 20px; /* removes underline */
+   }
+   .contact-icon > a{
+  margin: 0 .75rem;
+  color: var(--text);
+  display:inline-block;
+  line-height:1;
+  transition: color .3s ease, transform .3s ease;
+}
+.contact-icon > a:hover { 
+    color: var(--accent); transform: scale(1.08); 
+}
+  
+    .card {
+      color: var(--text);
+      background: var(--crdbg);
+      padding: 40px;
+      margin-left: 25%;
+      margin-top: 10px;
+      height: 500px;
+      width: 700px;
+      border-radius: 50px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .form-input{
+      width: 50%;
+      padding: 10px;
+      margin-left: 20%;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      font-size: 14px;
+      flex-direction: column;
+      
+    }
+    .form-input:focus {
+      border-color: var(--accent); /* highlight with accent color */
+      box-shadow: 0 0 6px var(--accent); 
+      outline: none;
+    }
+    
+    .btn {
+      width: 20%;
+      padding: 15px;
+      margin-left: 20%;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background-color: #ee8548;
+    }
+
+     /* Big faint watermark on left */
+ #contact::before {
+  content: "CONTACT ME";
+  position: absolute;
+  top: 10%;
+  right: clamp(0.5rem, 2vw, 1.5rem);
+  font-weight: 900;
+  font-size: clamp(2.5rem, 11vw, 8rem);
+  color: var(--text);
+  opacity: .05;
+  letter-spacing: .08em;
+  pointer-events: none;
+  z-index: 1;
+}
+    
+  @keyframes colorChange {
+    0%   { color: red; }
+    25%  {color: orchid;}
+    50%  { color: orange; }
+    75%  {color: yellow;}
+    100% { color: green; }
+  }
+
+  #meText {
+    animation: colorChange 3s infinite;
+  }

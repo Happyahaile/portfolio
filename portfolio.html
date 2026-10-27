@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav class="site-nav" role="navigation" aria-label="Main Navigation">
+            <ul class="site-nav__list">
+                <li><a class="site-nav__link" href="index.html">Home</a></li>
+                <li><a class="site-nav__link" href="about.html">About</a></li>
+                <li><a class="site-nav__link" href="portfolio.html">Portfolio</a></li>
+                <li><a class="site-nav__link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>        
+        <div class="theme-toggle">
+            <input type="radio" name="theme" id="theme-light" value="light">
+            <label for="theme-light">☀️</label>
+
+            <input type="radio" name="theme" id="theme-dark" value="dark" checked>
+            <label for="theme-dark">🌙</label>
+        </div>        
+    </header>
+
+    <!-- ===== Experience  ===== -->
+    <section id="portfolio" class="portfolio-section scroll-target">
+        <div class="container">
+            <h2 id="portfolio-title">Portfolio</h2>
+
+            <!-- Projects grid -->
+            <div class="projects-grid">
+                <!-- Website -->
+                <article class="project-card">
+                    <figure class="project-media">
+                        <img src="image/guday.png" alt="Screenshot of my website project" loading="lazy">
+                    </figure>
+                    <div class="project-body">
+                        <h3 class="project-title">Website — Bookkeeping</h3>
+                        <p class="project-desc">
+                          Financial services for companies including bookkeeping, tax consultancy and other financial services                        </p>
+                        <ul class="stack">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                        </ul>
+                        <p class="project-links">
+                            <a href="https://gudayadvisory.com/index.html" class="btn-live" target="_blank">Live</a>
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Hotel Management System (C++) -->
+                <article class="project-card">
+                    <figure class="project-media">
+                        <img src="image/hotel.png" alt="Hotel management console/project UI" loading="lazy">
+                    </figure>
+                    <div class="project-body">
+                        <h3 class="project-title">Hotel Management System</h3>
+                        <p class="project-desc">
+                            Booking, check-in/out, and room inventory with basic reports.
+                        </p>
+                        <ul class="stack">
+                            <li>C++</li>
+                        </ul>                      
+                    </div>
+                </article>
+
+                <!-- Personal Financial Management System (C++) -->
+                <article class="project-card">
+                    <figure class="project-media">
+                        <img src="image/finance.png" alt="Personal finance app mock" loading="lazy">
+                    </figure>
+                    <div class="project-body">
+                        <h3 class="project-title">Personal Financial Management</h3>
+                        <p class="project-desc">
+                            Expense tracking, categories, monthly summaries, and CSV import/export.
+                        </p>
+                        <ul class="stack">
+                            <li>C++</li>
+                        </ul>                        
+                    </div>
+                </article>                
+
+                <!-- Event Management System (C#) -->
+                <article class="project-card">
+                    <figure class="project-media">
+                        <img src="image/event.png" alt="Event management dashboard mock" loading="lazy">
+                    </figure>
+                    <div class="project-body">
+                        <h3 class="project-title">Event Management System</h3>
+                        <p class="project-desc">
+                            Events, attendees, tickets, and reminders with basic admin panel.
+                        </p>
+                        <ul class="stack">
+                            <li>C#</li>
+                        </ul>
+                        
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Certificates ===== -->
+    <section id="certificates" class="certs-section scroll-target">
+        <div class="container">
+            <h2 id="certs-title">Certificates</h2>
+
+            <ol class="cert-list">
+                <li>
+                  <span class="cert-name">Java Programming Training</span>
+                  <span class="issuer">— American College of Technology(ACT)</span>
+                  <time datetime="2023">2023</time>
+                </li>
+                <li>
+                  <span class="cert-name">C++ Programming Course</span>
+                  <span class="issuer">— Dandii Boru School</span>
+                  <time datetime="2022">2022</time>
+                </li>
+                <li>
+                    <span class="cert-name">First Aid Training</span>
+                    <span class="issuer">— Dandii Boru School</span>
+                    <time datetime="2024">2020</time>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <div class="cv-download">
+      <a href="image/CV.pdf" download class="btn-download">
+        <i class="fa-solid fa-download"></i> Download CV
+      </a>
+    </div>
+
+    <footer class="site-footer">
+        <a href="https://github.com/Happyahaile" target="_blank">
+            <i class="fa-brands fa-github fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/happyahaile" target="_blank">
+            <i class="fa-brands fa-linkedin-in fa-2x"></i>
+        </a>
+        <a href="mailto:happyahaile@gmail.com" target="_blank">
+            <i class="fa-solid fa-at fa-2x"></i>        </a>
+        <nav class="footer-nav" role="navigation" aria-label="Footer Navigation">
+            <ul class="footer-nav__list">
+            <li><a class="footer-nav__link" href="index.html">Home</a></li>
+            <li><a class="footer-nav__link" href="about.html">About</a></li>
+            <li><a class="footer-nav__link" href="portfolio.html">Portfolio</a></li>
+            <li><a class="footer-nav__link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="footer-copy">© 2025 Happya Haile. All rights reserved.</p>
+    </footer>
+
+
+</body>
+</html>

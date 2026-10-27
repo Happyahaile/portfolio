@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+    <header>              
+        <nav class="site-nav" role="navigation" aria-label="Main Navigation">
+            <ul class="site-nav__list">
+                <li><a class="site-nav__link" href="index.html">Home</a></li>
+                <li><a class="site-nav__link" href="about.html">About</a></li>
+                <li><a class="site-nav__link" href="portfolio.html">Portfolio</a></li>
+                <li><a class="site-nav__link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>        
+        <div class="theme-toggle">
+            <input type="radio" name="theme" id="theme-light" value="light">
+            <label for="theme-light">☀️</label>
+
+            <input type="radio" name="theme" id="theme-dark" value="dark" checked>
+            <label for="theme-dark">🌙</label>
+        </div>        
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <!-- Left: text -->
+            <div class="hero-left">
+                <p class="intro">Hello, It's</p>
+                <h1 class="hero-title">Happya Haile</h1>
+
+                <h2 class="hero-subtitle">
+                    I'm a <span class="accent">Software Engineer</span><span class="cursor">|</span>
+                </h2>
+
+                <p class="smallDescription">
+                    From crafting elegant solutions to building innovative applications, join me on a journey where technology meets artistry. Let's explore the endless possibilities of software development together!
+                </p>          
+
+                <!-- Contact button -->
+                <p class="cta-wrap">
+                    <a class="btn-contact" href="about.html">Get to know me</a>
+                </p>
+            </div>
+            <!-- Right: avatar -->
+            <figure class="hero-illustration">
+                <!-- The orange oval will be done with CSS; just place the image here -->
+                <img src="image/myIcon.png" alt="Cartoon portrait of Artist Nemo">
+            </figure>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <a href="https://github.com/yourusername" target="_blank">
+            <i class="fa-brands fa-github fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/yourusername" target="_blank">
+            <i class="fa-brands fa-linkedin-in fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/yourusername" target="_blank">
+            <i class="fa-solid fa-at fa-2x"></i>        </a>
+        <nav class="footer-nav" role="navigation" aria-label="Footer Navigation">
+            <ul class="footer-nav__list">
+            <li><a class="footer-nav__link" href="index.html">Home</a></li>
+            <li><a class="footer-nav__link" href="about.html">About</a></li>
+            <li><a class="footer-nav__link" href="portfolio.html">Portfolio</a></li>
+            <li><a class="footer-nav__link" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="footer-copy">© 2025 Happya Haile. All rights reserved.</p>
+    </footer>
+
+
+
+
+
+
+</body>
+</html>
